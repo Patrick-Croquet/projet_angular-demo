@@ -1,0 +1,10 @@
+<!--<li class="list-group-item">-->
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': fleurStatus === 'arrosée',
+                'list-group-item-danger': fleurStatus === 'non arrosée'}">
+    <div style="width:20px;height:20px;background-color:red;" 
+       *ngIf="fleurStatus === 'non arrosée'"></div>
+    <!--<h4>La {{ fleurName }} a été {{ getStatus() }}</h4>-->
+    <h4 [ngStyle]="{color: getColor()}">La {{ fleurName }} a été {{ getStatus() }}</h4>
+    <input type="text" class="form-control" [(ngModel)]="fleurName">
+</li>
