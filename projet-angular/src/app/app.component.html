@@ -6,6 +6,7 @@
         <!-- <app-fleur [fleurName]="fleurOne" [fleurStatus]="statusOne"></app-fleur>
         <app-fleur [fleurName]="fleurTwo" [fleurStatus]="statusOne"></app-fleur>
         <app-fleur [fleurName]="fleurThree" [fleurStatus]="statusTwo"></app-fleur> -->
+        
         <app-fleur  *ngFor="let fleur of fleurs"
                        [fleurName]="fleur.name"
                        [fleurStatus]="fleur.status"></app-fleur>

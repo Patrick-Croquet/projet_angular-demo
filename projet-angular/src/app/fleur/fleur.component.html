@@ -5,6 +5,6 @@
     <div style="width:20px;height:20px;background-color:red;" 
        *ngIf="fleurStatus === 'non arrosée'"></div>
     <!--<h4>La {{ fleurName }} a été {{ getStatus() }}</h4>-->
-    <h4 [ngStyle]="{color: getColor()}">La {{ fleurName }} a été {{ getStatus() }}</h4>
+    <h4 [ngStyle]="{color: getColor()}">La {{ fleurName }} {{ getStatus() }}</h4>
     <input type="text" class="form-control" [(ngModel)]="fleurName">
 </li>

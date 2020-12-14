@@ -19,7 +19,12 @@ export class FleurComponent implements OnInit {
   }
 
   getStatus() {
-    return this.fleurStatus;
+    if(this.fleurStatus === 'arrosée') {
+      return 'a été arrosée';
+    } else if(this.fleurStatus === 'non arrosée') {
+      return 'n\'a pas été arrosée';
+    }
+    //return this.fleurStatus;
   }
 
   getColor() {

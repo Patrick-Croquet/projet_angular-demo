@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,   
+      "name": "rose",
+      "status": "arrosée"
+    },
+    {
+      "id": 2,   
+      "name": "marguerite",
+      "status": "arrosée"
+    },
+    {
+      "id": 3,  
+      "name": "jacinthe",
+      "status": "non arrosée"
+    },
+    {
+      "id": 4,  
+      "name": "violette",
+      "status": "arrosée"
+    }    
+  ]
